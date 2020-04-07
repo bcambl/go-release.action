@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.5
+      uses: bcambl/go-release.action@v1.0.6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: "386"
@@ -25,7 +25,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.5
+      uses: bcambl/go-release.action@v1.0.6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
@@ -36,7 +36,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.5
+      uses: bcambl/go-release.action@v1.0.6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: "386"
@@ -47,7 +47,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.5
+      uses: bcambl/go-release.action@v1.0.6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
@@ -58,7 +58,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.5
+      uses: bcambl/go-release.action@v1.0.6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: "386"
@@ -69,9 +69,15 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.5
+      uses: bcambl/go-release.action@v1.0.6
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
         GOOS: windows
 ```
+
+This action is a fork of `ngs/go-release.action` with the following updates:  
+
+- use go modules if a `go.mod` file exists
+- go build with symbol and dwarf tables omitted via `ldflags`
+- repack executable with `upx` resulting in a reduced binary size
