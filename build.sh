@@ -2,6 +2,11 @@
 
 set -eux
 
+GOMODFILE="$GITHUB_WORKSPACE/go.mod"
+if [[ -f "$GOMODFILE" ]]; then
+    export GO111MODULE=on
+fi
+
 PROJECT_ROOT="/go/src/github.com/${GITHUB_REPOSITORY}"
 PROJECT_NAME=$(basename $GITHUB_REPOSITORY)
 
