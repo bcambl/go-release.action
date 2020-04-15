@@ -7,7 +7,7 @@ LABEL "com.github.actions.icon"="cpu"
 LABEL "com.github.actions.color"="orange"
 
 LABEL "name"="Automate publishing Go build artifacts for GitHub releases through GitHub Actions"
-LABEL "version"="1.0.6"
+LABEL "version"="1.0.7"
 LABEL "repository"="http://github.com/bcambl/go-release.action"
 
 RUN apk add --no-cache curl jq git build-base upx zip
