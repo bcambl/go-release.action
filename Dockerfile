@@ -10,7 +10,7 @@ LABEL "name"="Automate publishing Go build artifacts for GitHub releases through
 LABEL "version"="1.0.6"
 LABEL "repository"="http://github.com/bcambl/go-release.action"
 
-RUN apk add --no-cache curl jq git build-base upx
+RUN apk add --no-cache curl jq git build-base upx zip
 
 ADD entrypoint.sh /entrypoint.sh
 ADD build.sh /build.sh
