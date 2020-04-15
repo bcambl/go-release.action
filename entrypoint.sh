@@ -18,7 +18,7 @@ ARCHIVE_EXT='.tar.gz'
 CONTENT_TYPE='application/gzip'
 
 if [ $GOOS == 'windows' ]; then
-  EXT='.exe'
+  BIN_EXT='.exe'
   ARCHIVE_CMD='zip'
   ARCHIVE_EXT='.zip'
   CONTENT_TYPE='application/zip'
