@@ -7,6 +7,7 @@ This action is a fork of `ngs/go-release.action` with the following updates:
 - use go modules if a `go.mod` file exists
 - go build with symbol and dwarf tables omitted via `ldflags`
 - repack executable with `upx` resulting in a reduced binary size
+- compress windows release binary using `zip`
 
 ```yaml
 # .github/workflows/release.yaml
