@@ -21,7 +21,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.7
+      uses: bcambl/go-release.action@v1.0.8
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: "386"
@@ -32,7 +32,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.7
+      uses: bcambl/go-release.action@v1.0.8
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
@@ -43,7 +43,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.7
+      uses: bcambl/go-release.action@v1.0.8
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: "386"
@@ -54,7 +54,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.7
+      uses: bcambl/go-release.action@v1.0.8
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
@@ -65,7 +65,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.7
+      uses: bcambl/go-release.action@v1.0.8
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: "386"
@@ -76,7 +76,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: compile and release
-      uses: bcambl/go-release.action@v1.0.7
+      uses: bcambl/go-release.action@v1.0.8
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GOARCH: amd64
